@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Css Media Query</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Extra small devices (phones, 600px and down)*/
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up)*/
+        @media only screen and (min-width: 600px) {
+            body {
+                background-color: yellow;
+            }
+        }
+
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        /* Large devices (laptops, desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up)*/
+        @media only screen and (min-width: 1200px) {
+            body {
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div class="cls" style="color:red;">
+            <h3>Media Query</h3>
+            <p>To bulid responsive web page</p>
+        </div>
+        <div class="cls" style="color:cadetblue">
+            <h3>Media Query</h3>
+            <p>To bulid responsive web page</p>
+        </div>
+        <div class="cls" style="color: yellow;">
+            <h3>Media Query</h3>
+            <p>To bulid responsive web page</p>
+        </div>
+        <div class="cls" >
+            <h3>Media Query</h3>
+            <p>To bulid responsive web page</p>
+        </div>
+    </div>
+</body>
+
+</html>

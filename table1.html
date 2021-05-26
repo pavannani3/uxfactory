@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form in table formate</title>
+        <style>
+           table{
+                width:30%;
+            }
+            .form{
+                text-align:center;
+            }
+            h1{
+                background: cornflowerblue;
+                color: darkgreen;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Forms Elements</h1>
+        <div class="form">
+        <table>
+            <tr>
+                <td><label for="fname">Firstname</label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Lastname</label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="mail">Email Address</label></td>
+                <td><input type="email" id="mail" name="mail">
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td><input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                
+                <input type="radio" id="femaie" name="gender">
+                    <label for="female">Female</label>
+                
+                <input type="radio" id="others" name="gender">
+                    <label for="others">Others</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="file">Upload a File</label></td>
+                <td><input type="file" id="file" name="file">
+            </tr>
+            <tr>
+                <td><label>Select a Option</label></td>
+          <tr>
+              <td>
+                <input type="checkbox" id="car" name="car">
+                <label for="car">car</label><br>
+                <input type="checkbox" id="bike" name="bike">
+                <label for="bike">Bike</label><br>
+                <input type="checkbox" id="cycle" name="cycle">
+                <label for="cycle">cycle</label><br>
+        
+              </td>
+          </tr>
+          <tr>
+              <td><label for="color">Favourite Color</label></td>
+              <td><input type="color" id="color" name="favcolor"</td>
+          </tr>
+          <tr>
+              <td><label>Choose a Mobile</label></td>
+              <td>
+                <select  multiple style="width: 200px;">
+                    <option value="apple">Iphone</option>
+                    <option value="vivo">Vivo</option>
+                    <option value="Redmi" selected>Redmi</option>
+                    <option value="oppo">oppo</option>
+                    <option value="Realme">Realme</option>
+                    <option value="nokia">Nokia</option>
+                    <option value="samsung">Samsung</option>
+                </select>
+              </td>
+          </tr>
+          <tr>
+              <td><label>Write a letter</label></td>
+              <td>
+                  <textarea name="text" id="text" cols="25" rows="5"></textarea>
+              </td>
+          </tr>
+          <tr>
+              <td><label for="">DataList</label></td>
+              <td><input list="lap">
+              <datalist id="lap">
+                  <option value="Dell"></option>
+                  <option value="Samsung"></option>
+                  <option value="Lenovo"></option>
+                  <option value="Apple"></option>
+                  <option value="HP"></option>
+              </datalist>
+              </td>
+          </tr>
+          <tr>
+              <td><label>Field Set</label></td>
+              <td>
+                <fieldset style="width: 100px;">
+                    <legend>Student Info</legend>
+                    <label for="fname">Firstname</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Lastname</label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for=number">Number</label>
+                    <input type="number" id="number" name="number"><br><br>
+                    <button type="button">Submit</button>
+                </fieldset>
+              </td>
+          </tr>
+          <tr>
+              <td></td>
+              
+          </tr>
+          <tr>
+              <td><button>Submit</button></td>
+              <td><input type="reset" value="reset"></td>
+          </tr>
+        </table>
+    </div>
+    </body>
+</html>

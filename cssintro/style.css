@@ -1,0 +1,30 @@
+html{
+    height: 100%;
+}
+body{
+    background-image: url("../img/img5.jpg");
+    background-size: 100% 100%;
+}
+h1{
+    margin: 30px;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    color: black;
+    background-color: skyblue;
+    margin: 25px;    
+}
+h2{
+    border-radius: 10px;
+    background-color: skyblue;
+    color: black;
+    opacity: 0.5;
+    padding: 10px;
+}
+p{
+    font-size: 30px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+} 
