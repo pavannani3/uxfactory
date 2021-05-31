@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ecommerce product web page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width, intial-scale:1">
+    <link rel="stylesheet" href="./cssintro/wpexample1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+                <div class="slider">
+                    <div class="product">
+                        <img src="./img/mens/shirt1.jpg" alt="..." onclick="clickme (this)">
+                        <img src="./img/mens/shirt2.jpg" alt="..." onclick="clickme (this)">
+                        <img src="./img/mens/shirt3.jpg" alt="..." onclick="clickme (this)">
+                        <img src="./img/mens/shirt4.jpg" alt="..." onclick="clickme (this)">
+                    </div>
+                    <div class="preview">
+                        <img src="./img/mens/shirt4.jpg" alt="..." id="imagebox">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="content">
+                    <p class="brand">Brand: Lenen</p>
+                    <h2>Men black checks and cotton double line shirts</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price">Brand: Lenen</p>
+                    <p>size: <select name="size">
+                            <option value="slect size">slect size</option>
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
+                            <option value="extra large">extra large</option>
+                        </select></p>
+                    <p>Quantity:<input type="text" value="1"></p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>Add toi cart
+                    </button>
+                </div>
+            </div>
+        </div><hr><hr><hr><br>
+        <div class="related">
+            <h2>Related items</h2>
+            <div class="row">
+                <div class="columns">
+                    <div class="items">
+                        <img src="./img/mens/shirt1.jpg" alt="...">
+                        <div class="details">
+                            <p>Men Brand solid balck jacket</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs. 599/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="./img/mens/shirt2.jpg" alt="...">
+                        <div class="details">
+                            <p>Men Brand solid balck jacket</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs. 599/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="./img/mens/shirt3.jpg" alt="...">
+                        <div class="details">
+                            <p>Men Brand solid balck jacket</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs. 599/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="./img/mens/shirt4.jpg" alt="...">
+                        <div class="details">
+                            <p>Men Brand solid balck jacket</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs. 599/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clickme (smallImg){
+            var fullImg= document.getElementById("imagebox");
+            fullImg.src=smallImg.src;
+        }
+    </script>
+</body>
+
+</html>
