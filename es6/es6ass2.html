@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script>
+    const studetDetails = [{
+      name: 'John',
+      standard: 2,
+      section: 'B',
+    },
+    {
+      name: 'Tim',
+      standard: 3,
+      section: 'B',
+    },
+    {
+      name: 'Tom',
+      standard: 2,
+      section: 'B',
+    },
+    {
+      name: 'Toy',
+      standard: 3,
+      section: 'C',
+    },
+    {
+      name: 'Paul',
+      standard: 5,
+      section: 'A',
+    },
+    {
+      name: 'Robort',
+      standard: 5,
+      section: 'B',
+    }];
+
+  // console.log(studetDetails);
+  // console.log(typeof studetDetails);
+
+  // let totalValue = studetDetails.map(
+  //     (item,index) => {
+  //         return item + studetDetails[index];
+  //     }
+  // );
+  // console.log(totalValue);
+
+
+  // Get all students which belongs to section 'B'
+  // Get All students whic belongs to same standard
+  // Find student name called 'Paul' and console all the details
+  // Get all student Name in an array
+
+    // for (let i = 0; i<studetDetails.length; i++){
+    //   console.log(studetDetails[i],name);
+    // }
+
+    // for (let i=0; i<studetDetails.length; i++){
+    //  /* if (studetDetails[i].name === 'paul') {
+        
+    //   }*/
+    //   //console.log(i);
+    //   if ( studetDetails[i]=== 'Paul') {
+
+    //   console.log(studetDetails[0], name); 
+    //   }
+    // }
+
+    // for (let i=0; i<studetDetails.length; i++){
+    //   if (studetDetails[i].section === 'B') {
+    //     console.log(studetDetails[i].name);
+    //   }
+    // }
+
+    // for (let i=0; i<studetDetails.length; i++){
+    //   if (studetDetails[i].name === '5') {
+    //     console.log(studetDetails[i].name);
+    //   }
+    // }
+
+    const filterStudentB = studetDetails.filter(
+      (item) => {
+        if (item.section == 'B') {
+          return item;
+        }
+      }
+    );
+    console.log(filterStudentB);
+
+    const filterStudentClass = studetDetails.filter(
+      (item) => {
+        if (item.standard == 2) {
+          return item;
+        }
+      }
+    );
+    console.log(filterStudentClass);
+
+    const filterStudentName = studetDetails.filter(
+      (item) => {
+        if (item.name == 'paul') {
+          return item;
+        }
+      }
+    );
+    console.log(filterStudentName,name);
+
+
+  </script>
+
+
+  <!-- <script>
+    // add (10, 'hello', 'hi', 20, 'tim', 40)
+
+    function add(...input) {    
+      let sum = 0;
+      for (const i of input){
+        if (typeof i === 'number') { 
+        sum += i;
+      }
+    }
+      return sum;
+  }
+    console.log(add(10, 'hello', 'hi', 20, 'tim', 40));
+
+  </script> -->
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -3,18 +3,32 @@
 
 <head>
     <title>Example for Javascript</title>
-    <script>
+    <!-- <script>
         function myfunction() {
             document.getElementById("jsintro").innerHTML = "Hello javascript";
             document.getElementById("jsintro").style.color = "red";
             document.getElementById("jsintro").style.backgroundColor = "blue";
+
+            document.getElementById("image").src = "bulbon.jpg";
+            document.getElementById("image1").src = "buloff.jpg"
         } 
-    </script>
+    </script> -->
 </head>
 
 <body>
-    <p id="jsintro">Javascript introduction</p>
+    <!-- <p id="jsintro">Javascript introduction</p>
     <button type="button" onclick="myfunction()">Click Me!</button>
+    
+    <button type="button" onclick="myfunction()"></button>
+    <img id="image" src="../img/bulboff.jpg" alt=".." width="25%">
+    <button type="button" onclick="myfunction()"></button>
+    <img id="image1" src="../img/bulbon.jpg" alt=".." width="25%"> -->
+
+    <button onclick="document.getElementById('myImage').src='../img/bulbon.jpg'">Turn on the light</button>
+
+    <img id="myImage" src="../img/bulboff.jpg" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='../img/bulboff.jpg'">Turn off the light</button>
 </body>
 
 </html>

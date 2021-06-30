@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        const carDetaisl = {
+            modelName: 'BMW',
+            manfYear: 2000,
+            color: 'white',
+            autoGear: true,
+            features: {
+                wheels: 4,
+                mirrors: 2,
+                sideLights: 8,
+                BreakLights: 4,
+                Headlights: 4
+            }
+        };
+
+//My car is BMW.
+//Manf year is 2000. it has 4 wheels and 2 mirrors.
+//I like white color.
+//It has total 16 lights(sideLights : 8 + BreakLights: 4 + Headlights: 4).
+//it does not have gear system.
+//it has auto gear system.
+//autoGear: true => it has auto gear system.
+//autoGear: false => it does not have gear system.
+
+const {features: {wheels, mirrors, sideLights, BreakLights, Headlights}, color, modelName, manfYear, autoGear,} = carDetaisl;
+console.log("My car is",modelName);
+console.log("Manf year is",manfYear,"it has",wheels,"wheels and",mirrors,"mirrors.");
+console.log("I like",color,"color.");
+console.log(`It has a ${sideLights+BreakLights+Headlights}.`);
+
+// if (autoGear != true) {
+//     console.log("It has auto gear system.");
+// }else {
+//     console.log("It does not have gear system.");
+// }
+
+console.log(`${autoGear == true ? 'It does not have gear system' : 'It has auto gear system'}`);
+
+
+    </script>
+</head>
+
+<body>
+    <div>class 4</div>
+</body>
+
+</html>

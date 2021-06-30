@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Introduction of Java script</title>
+    <script>
+        var x = 10;
+        var y = 5;
+        function sum(){
+            //var x = 20;
+            //var y = 10;
+            var z = x + y;
+            document.getElementById("demo").innerHTML = "sum of the both" + z;
+        }
+        function sub(){
+            //var x = 20;
+            //var y = 10;
+            var z = x * y;
+            document.getElementById("demo1").innerHTML = "sum of the both" + z;
+        }
+        function mul(){
+            //var x = 20;
+            //var y = 10;
+            var z = x - y;
+            document.getElementById("demo2").innerHTML = "sum of the both" + z;
+        }
+    </script>
+</head>
+<body>
+    <div id="demo"></div>
+    <input type="button" onclick="sum()" value="sum"/>
+    <div id="demo1"></div>
+    <input type="button" onclick="sub()" value="sub"/>
+    <div id="demo2"></div>
+    <input type="button" onclick="mul()" value="mul"/>    
+</body>
+</html>

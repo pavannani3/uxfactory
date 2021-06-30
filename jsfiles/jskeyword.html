@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script this key word</title>
+    <script>
+        // document.write("this example", this);
+        // function myfunction() {
+        //     x = 5;
+        //     y = 10;
+        //     document.write("this example infunction", this);
+        // }
+        var person = {
+            firstName: "Pavan",
+            lastName: "Nani",
+            fullName : function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        // Display data from the object:
+        // document.getElementById("demo").innerHTML = person.fullName();
+        var student = person.fullName();
+        //console.log("this example in function", student);
+        document.write("example for this in function ", student);
+
+        //window.open("http://www.google.com");
+        console.log("location of href", window.location.href);
+        window.confirm("are sure to proced");
+    </script>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <button onclick="this.style.display='none'">click to remove me</button>
+</body>
+
+</html>

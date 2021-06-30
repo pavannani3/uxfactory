@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function sum(a, b) {
+            // if (a == null){
+            //     a = 5;
+            // }if (b == null) {
+            //     b = 5;
+            // }
+            // return a + b;
+            const c = a || 5;
+            const d = b || 5;
+            return c + d;
+        }
+        console.log(sum(null, 20));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

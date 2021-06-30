@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const studentDetails1 = {name:'pavan', study:'btech', course:'reactjs'};
+        const studentDetails2 = ['nani', 'btech', 'eee'];
+
+        console.log(typeof studentDetails1);
+
+        if (typeof studentDetails1 === 'object') {
+            for (let key in studentDetails1) {
+                console.log(studentDetails1[key]);
+            }        
+        }
+
+        console.log(Array.isArray(studentDetails2));
+
+        if (Array.isArray(studentDetails2) === true) {
+            for(var i=0; i<studentDetails2.length; i++) {
+                console.log(studentDetails2[i]);
+            }
+        }
+
+
+
+
+
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+</html>

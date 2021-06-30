@@ -1,0 +1,312 @@
+/* @import url("https://fonts.googleaips.com/wss2?family-poppins:wght@100;200;300;400;500;600;700;800;900& dispaly=swap"); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {    
+    font-family:  sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.63);
+}
+h6 {
+    color: lightcyan;
+}
+button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: lightskyblue;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+hr {
+    width: 30px;
+    height: 2px;
+    background-color: coral;
+}
+.navbar {
+    font-size: 16px;
+    top: 0;
+    left: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover, .nav i:hover,
+.navbar-light .navbar-nav .nav-link.active, .nav i.active {
+    color: coral;
+}
+.navbar {
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+button:hover {
+    background-color: lightslategray;
+}
+#home {
+    background-image: url("../../img/wpexample2/bgimg1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.774);
+    margin-bottom: 40px;
+}
+#home span{
+    color: coral;
+}
+#bar {
+    font-size: 1rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+#bar:hover, #bar.active{
+    color: white;
+}
+@media only screen and(max-width: 992px){
+body>nav>div>button:hover,
+body>nav>div>button:focus{
+    background-color: coral;
+}
+body>nav>div>button:hover#bar,
+body>nav>div>button:focus#bar{
+    color: white;
+}
+#navbarsupportedcontent>ul>li:nth-child(n)>a{
+    padding:10px 0;
+}
+}
+#new .one img {
+    width: auto;
+    height: 50vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#new .one .details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+#new .one:hover .details {
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: rgb(80, 103, 110);
+}
+#new .one .details button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(41, 39, 39, 0.836);
+    background: none;
+    text-transform: uppercase;
+    background-color: coral;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+}
+#new .one .details button:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+#new .one:nth-child(1) .details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+#new .one:nth-child(2) .details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+#new .one:nth-child(3) .details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+.product {
+    cursor: pointer;
+    margin-bottom: 0.3s all;
+}
+.product img {
+    height: 25vh;
+    transition: 0.3s ease;
+}
+.product :hover img {
+    opacity: 0.7;
+}
+.product .buy {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: none;
+    background: coral;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.product:hover .buy {
+    background: coral;
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.3s ease;
+}
+.product .p-name {
+    color: rgb(14, 63, 66);
+}
+.star {
+    padding: 10px 0;
+}
+.star i {
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+#banner {
+    background-image: url("/img/wpexample2/bgimg3.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+    align-items: flex-end;
+    color: rgba(255, 255, 255, 0.774);
+    margin-bottom: 40px;
+}
+#banner h4 {
+    color: black;
+}
+#banner h1 {
+    color: white;
+}
+#banner button {
+    background-color: coral;
+    color: black;
+}
+.newproduct {
+    cursor: pointer;
+    margin-bottom: 0.3s all;
+}
+.newproduct img {
+    height: 50vh;
+    transition: 0.3s ease;
+}
+.newproduct :hover img {
+    opacity: 0.7;
+}
+.newproduct .buy {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: none;
+    background: coral;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.newproduct:hover .buy {
+    background: coral;
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.3s ease;
+}
+.newproduct .p-name {
+    color: rgb(14, 63, 66);
+}
+.star {
+    padding: 10px 0;
+}
+.star i {
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+footer {
+    background-color: rgb(66, 65, 65);
+}
+footer h5{
+    color: rgb(206, 236, 236);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+footer li {
+    padding-bottom: 4px;
+}
+footer li a {
+    font-size: 0.8rem;
+    color: rgb(219, 203, 203);
+}
+footer li a:hover {
+    color: rgb(209, 202, 202);
+}
+footer p {
+    color: rgb(139, 133, 133);
+    font-size: 0.8rem;
+}
+footer .copyright a {
+    color: black;
+    width: 38px;
+    height: 38px;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+}
+footer .copyright a:hover {
+    color: whitesmoke;
+    background-color: coral;
+}

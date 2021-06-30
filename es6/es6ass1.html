@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        const firstName = ['a', 'b', 'c'];
+        const secondName = [1, 2, 3];
+
+        for(let score of firstName) {
+            score = score + secondName;
+            console.log('score value : ', score);
+        }
+        
+        // const result = firstName.map(
+        //     (item,index) => {
+        //         return item + secondName[index];
+        //     }
+        // );
+        // console.log(result);
+
+        // const first = [2, 3, 4];
+        // const second = [4, 5, 6];
+
+        // const total = first.map(
+        //     (item,index) => {
+        //         return item * second[index];
+        //     }
+        // );
+        // console.log('multiplay values :', total);
+
+        // var acc = [];
+        // firstName.reduce(
+        //     (acc,item,index) => {
+        //         return acc.push(item + secondName[index]);
+        //     }
+        // );
+        // console.log((acc));
+
+    </script>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+</html>

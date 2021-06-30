@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <!-- <script>
+        function arth(a, b) {
+            return [a+b, a-b, a*b];
+        }
+        const [d,e,f] = arth(10, 20);
+        console.log(f);
+
+
+    </script> -->
+
+    <script>
+        let studentDetails = [
+            { name: 'Tim', standard: 2, section: 'A' },
+            { name: 'Tony', standard: 4, section: 'C' },
+            { name: 'Pam', standard: 3, section: 'A' },
+            { name: 'Tom', standard: 2, section: 'B' },
+            { name: 'Paul', standard: 1, section: 'C' },
+
+        ];
+
+        // const studentSameName = studentDetails.reduce(
+        //     (acc,item,index) => {
+        //         if (item.name.indexOf('T') == 0) {
+        //              acc.push(item);
+        //         }
+        //         return acc;
+        //     }
+        // ,[]);
+        // console.log(studentSameName);
+
+
+        // const finalStudentSameName = (findingString, studentArray) => {
+        //     const studentSameName = studentDetails.filter(
+        //         (item) => {
+        //             if (item.name.indexOf(findingString) == 0) {
+        //                 return item.name;
+        //             }
+        //         }
+        //     );
+        //     return studentSameName;
+        // }
+        // console.log(finalStudentSameName('T',studentDetails));
+
+
+
+        // const finalStudentSameName = (findingString, studentArray) => {
+        //     const studentSameName = studentDetails.filter(item => {
+        //         const upperCase = (item.name).toUpperCase();
+        //         return upperCase.indexOf(findingString.toUpperCase()) == 0;
+        //     });
+        //     return studentSameName.length ? studentSameName : `Result not found with your searching latter ${findingString}`;
+        // }
+        // console.log(finalStudentSameName("m", studentDetails));
+
+        // const finalStudentSameName = (findingString, studentArray) => {
+        //     const studentSameName = studentDetails.filter(item => {
+        //         const upperCase = (item.section).toUpperCase();
+        //         return upperCase.indexOf(findingString.toUpperCase()) == 0;
+        //     });
+        //     return studentSameName.length ? studentSameName : `Result not found with your searching latter ${findingString}`;
+        // }
+        // console.log(finalStudentSameName("b", studentDetails));
+
+        // const finalStudentSameName = (findingString, studentArray) => {
+        //     const studentSameName = studentDetails.filter(item =>{
+        //         if (item.standard.indexOf(findingString) == 0) {
+        //             return item;
+        //         }
+        //         });
+        //     return studentSameName.length ? studentSameName : `Result not found with your searching latter ${findingString}`;
+        // }
+        // console.log(finalStudentSameName(2, studentDetails));
+
+
+        const finalStudentSameName = (findingStirng, studentArray) => {
+            if (typeof findingStirng != 'string' && typeof findingStirng != 'number') {
+                return `findingstring is a ${typeof findingStirng}. Required string or number.`
+            }
+            if (typeof studentArray != 'object') {
+                return `studentarray is ${typeof studentArray}. Requried object.`
+            }
+            const totolStudentDetails = studentDetails.filter(
+                (item) => {
+                    return item.name == findingStirng || item.standard == findingStirng || item.section == findingStirng;
+                }
+            );
+            return totolStudentDetails.length ? totolStudentDetails : false;
+        }
+        console.log(finalStudentSameName( 1, [0]));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

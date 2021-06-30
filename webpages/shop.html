@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ecommerce product web page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width, intial-scale:1">
+    <link rel="stylesheet" href="../cssfiles/cssintro/wpexample1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .product img {
+            display: block;
+            padding-bottom: 20px;
+        }
+        .preview img{
+            width: auto;
+            height: 70vh;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+                <div class="slider">
+                    <div class="product">
+                        <img src="../img/wpexample2/shirtb.jpg" alt="..." onclick="clickme (this)">
+                        <img src="../img/wpexample2/shirtb1.jpg" alt="..." onclick="clickme (this)">
+                    </div>
+                    <div class="preview">
+                        <img src="../img/wpexample2/shirtb.jpg" alt="..." id="imagebox">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="content">
+                    <p class="brand">Brand: Lenen</p>
+                    <h2>Men black checks and cotton double line shirts</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price">Brand: Lenen</p>
+                    <p>size: <select name="size">
+                            <option value="slect size">slect size</option>
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
+                            <option value="extra large">extra large</option>
+                        </select></p>
+                    <p>Quantity:<input type="text" value="1"></p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clickme (smallImg){
+            var fullImg= document.getElementById("imagebox");
+            fullImg.src=smallImg.src;
+        }
+    </script>
+</body>
+
+</html>
